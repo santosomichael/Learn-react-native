@@ -9,29 +9,19 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-  Button,
+  View
 } from 'react-native';
-import { NavigationActions } from 'react-navigation'
 
 export default class aNavigation extends Component {
   static navigationOptions = {
-    title: 'HOME',
+    title: 'Second Page',
   };
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Home page
+          Second Page
         </Text>
-        <Button 
-          onPress={()=>navigate("FirstPage", {})}
-          title="To first page"
-        />
-        <Button 
-          onPress={()=>navigate("SecondPage", {})}
-          title="To second page"
-        />
       </View>
     );
   }
